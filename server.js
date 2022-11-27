@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/v1/goals", require("./routes/goalRoutes"));
+app.use("/api/v1/users", require("./routes/userRoutes"));
 
 app.use(errorHandler);
 
